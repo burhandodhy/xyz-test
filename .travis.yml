@@ -1,12 +1,4 @@
-# Travis CI (MIT License) configuration file for the solitude WordPress theme.
-# @link https://travis-ci.org/
 
-# For use with the solitude WordPress theme.
-# @link https://github.com/shubham9411/solitude
-
-# Ditch sudo and use containers.
-# @link http://docs.travis-ci.com/user/migrating-from-legacy/#Why-migrate-to-container-based-infrastructure%3F
-# @link http://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
 sudo: false
 
 # Declare project language.
@@ -30,7 +22,7 @@ matrix:
         - php: "5.5"
         # aliased to a recent 5.6.x version
         - php: '5.6'
-          env: SNIFF=1
+          #env: SNIFF=1
         # aliased to a recent 7.0.x version
         - php: '7.0'
         # aliased to a recent 7.1.x version
